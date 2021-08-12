@@ -172,6 +172,9 @@ span {
     .fa-plus{
         margin-left: 90vw;
     }
+    .fa-trash{
+        visibility: visible;
+    }
 }
 
 @media screen and (max-width: 700px) { 
