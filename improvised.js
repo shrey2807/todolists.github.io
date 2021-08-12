@@ -1,7 +1,7 @@
 const cards = document.querySelector('.cards');
 const newList = document.querySelector('.fa-plus');
 const newTask = document.getElementsByClassName('newTask');
-const edit = document.querySelectorAll('.fa-edit');
+// const edit = document.querySelectorAll('.fa-edit');
 const trash = document.getElementsByClassName('fa-trash');
 const lis = document.getElementsByClassName('lis');
 const delList = document.getElementsByClassName('deleteList');
@@ -15,15 +15,15 @@ function doit(e) {
         const usertask = prompt("enter the task");
         const li = document.createElement('li');
         const span = document.createElement('span');
-        const iconedit = document.createElement('i');
+        // const iconedit = document.createElement('i');
         const icontrash = document.createElement('i');
 
-        iconedit.classList.add('fas', 'fa-edit');
+        // iconedit.classList.add('fas', 'fa-edit');
         icontrash.classList.add('fas', 'fa-trash');
 
         span.innerText = usertask;
         li.appendChild(span);
-        span.appendChild(iconedit);
+        // span.appendChild(iconedit);
         span.appendChild(icontrash);
         e.target.parentElement.children[0].appendChild(li);
         e.stopPropagation();
